@@ -1,0 +1,122 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em; 
+}
+
+/*----------PILDID----------*/
+
+.intro-image, .packaging-image, .tutorials-image{
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.intro-image{
+    background-image: url("/img/winter1.jpg");
+    min-height: 400px;
+}
+
+.packaging-image{
+    background-image: url("/img/winter2.jpg");
+    min-height: 400px;
+}
+
+.tutorials-image{
+    background-image: url("/img/winter3.jpg");
+    min-height: 400px;
+}
+
+/*----------TEKST----------*/
+
+.intro-text{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.packaging-text{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tutorials-text{
+    text-align: center;
+    margin: 0 auto;
+}
+/*----------NUPUD----------*/
+
+.intro-image__text{
+    left: 50%;
+    top: 50%;
+    position: relative;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffffff;
+    display: inline-block;
+    transform: translate(-50%, 500%);
+}
+
+.intro-image__text:hover{
+    background-color: gray;
+    color: white;
+}
+
+
+.packaging-image__text{
+    left: 50%;
+    top: 50%;
+    position: relative;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffffff;
+    display: inline-block;
+    transform: translate(-50%, 500%);
+
+}
+
+
+.packaging-image__text:hover{
+    background-color: gray;
+    color: white;
+}
+
+.tutorials-image__text{
+    left: 50%;
+    top: 50%;
+    position: relative;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffffff;
+    display: inline-block;
+    transform: translate(-50%, 500%);
+}
+
+.tutorials-image__text:hover{
+    background-color: gray;
+    color: white;
+}
+
+.btn{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/*----------FOOTERID----------*/
+
+li{
+    list-style: none;
+    text-align: center;
+}
+
+@media(max-width:568px){
+    .intro-image, .packaging-image, .tutorials-image{
+        background-attachment: scroll;
+    }
+}
