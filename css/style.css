@@ -5,7 +5,11 @@ body, html{
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.8em; 
+    background-color: rgb(197, 179, 146);
+    text-decoration: none;
 }
+
+
 
 /*----------PILDID----------*/
 
@@ -19,18 +23,20 @@ body, html{
 }
 
 .intro-image{
-    background-image: url("/img/winter1.jpg");
+    background-image: url("/img/pexels-jalil-shams-1006536.jpg");
     min-height: 400px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0% 30%);
 }
 
 .packaging-image{
-    background-image: url("/img/winter2.jpg");
+    background-image: url("/img/pexels-julia-volk-6576269.jpg");
     min-height: 400px;
 }
 
 .tutorials-image{
-    background-image: url("/img/winter3.jpg");
+    background-image: url("/img/pexels-si̇nan-önder-243125.jpg");
     min-height: 400px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);
 }
 
 /*----------TEKST----------*/
@@ -42,12 +48,14 @@ body, html{
 
 .packaging-text{
     text-align: center;
-    margin: 0 auto;
+    margin-left: 47rem ;
+    margin-right: 47rem;
+    padding-bottom: 1rem;
 }
 
 .tutorials-text{
     text-align: center;
-    margin: 0 auto;
+    margin: 2rem ;
 }
 /*----------NUPUD----------*/
 
@@ -55,16 +63,34 @@ body, html{
     left: 50%;
     top: 50%;
     position: relative;
-    background-color: white; 
+    background-color: lightgray; 
     color: black; 
-    border: 2px solid #ffffff;
+    border: 2px solid lightgray;
     display: inline-block;
-    transform: translate(-50%, 500%);
+    transform: translate(-50%, 230%);
+    opacity: 70%;
+    color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: wheat;
+	padding: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+    
 }
 
+
 .intro-image__text:hover{
-    background-color: gray;
+    background-color: rgb(58, 126, 189);
     color: white;
+    background: lightgray;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
 }
 
 
@@ -72,34 +98,66 @@ body, html{
     left: 50%;
     top: 50%;
     position: relative;
-    background-color: white; 
+    background-color: lightgray; 
     color: black; 
-    border: 2px solid #ffffff;
+    border: 2px solid lightgray;
     display: inline-block;
-    transform: translate(-50%, 500%);
+    transform: translate(-50%, 230%);
+    opacity: 70%;
+    color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: wheat;
+	padding: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
 
 }
 
 
 .packaging-image__text:hover{
-    background-color: gray;
+    background-color: rgb(58, 126, 189);
     color: white;
+    background: lightgray;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
 }
 
 .tutorials-image__text{
     left: 50%;
     top: 50%;
     position: relative;
-    background-color: white; 
+    background-color: lightgray; 
     color: black; 
-    border: 2px solid #ffffff;
+    border: 2px solid lightgray;
     display: inline-block;
-    transform: translate(-50%, 500%);
+    transform: translate(-50%, 230%);
+    opacity: 70%;
+    color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: wheat;
+	padding: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
 }
 
 .tutorials-image__text:hover{
-    background-color: gray;
+    background-color: rgb(58, 126, 189);
     color: white;
+    background: lightgray;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
 }
 
 .btn{
@@ -113,10 +171,48 @@ body, html{
 li{
     list-style: none;
     text-align: center;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 10px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+    transform: translate(-11%, 50%);
+    
+}
+
+a {
+    text-decoration: none;
 }
 
 @media(max-width:568px){
     .intro-image, .packaging-image, .tutorials-image{
         background-attachment: scroll;
     }
+}
+
+.wrapper{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer{
+
+    text-align: center;
+    text-decoration: none;
+}
+
+li:hover{
+
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    text-decoration: none;
 }
