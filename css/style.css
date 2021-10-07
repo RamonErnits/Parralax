@@ -23,18 +23,18 @@ body, html{
 }
 
 .intro-image{
-    background-image: url("/img/pexels-jalil-shams-1006536.jpg");
+    background-image: url("../img/pexels-jalil-shams-1006536.jpg");
     min-height: 400px;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0% 30%);
 }
 
 .packaging-image{
-    background-image: url("/img/pexels-julia-volk-6576269.jpg");
+    background-image: url("../img/pexels-julia-volk-6576269.jpg");
     min-height: 400px;
 }
 
 .tutorials-image{
-    background-image: url("/img/pexels-si̇nan-önder-243125.jpg");
+    background-image: url("../img/pexels-si̇nan-önder-243125.jpg");
     min-height: 400px;
     clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);
 }
